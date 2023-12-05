@@ -1,0 +1,41 @@
+# Cypress Automation
+The Cypress automation suite includes test scripts written in JavaScript using the Cypress testing framework. These scripts simulate user interactions with the HR Management System, performing end-to-end tests, API testing, UI testing, and other scenarios to validate the system's functionalities.
+
+# Features Covered:
+Login Functionality: Authentication and access control.
+Employee Management: Adding, editing, deleting employee profiles.
+Leave Management: Testing leave request submissions, approvals, and rejections.
+Payroll Management: Validating salary calculations, deductions, and bonuses.
+Performance Evaluations: Testing performance review functionalities.
+API Testing: Verifying backend functionalities through API requests.
+Various Scenarios: Error handling, input validations, and edge cases.
+
+# Getting Started
+
+Prerequisites
+Node.js installed on your machine
+Clone this repository
+Installing Cypress
+To run the Cypress automation scripts locally:
+
+1. Install Cypress globally or locally in the project:
+
+npm install cypress --save-dev
+
+2. Clone this repository:
+
+bash
+Copy code
+git clone https://github.com/marcusautomatic/orange_automation
+
+Running Tests
+To run Cypress tests:
+
+# Open Cypress:
+
+
+npx cypress open
+Select a test file to run or execute all tests.
+
+# Contributions
+Contributions and improvements to the test suite are welcome! Fork the repository, make changes, and create a pull request.
