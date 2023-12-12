@@ -16,6 +16,7 @@
 // Import commands.js using ES2015 syntax:
 import './modules/login_module/'
 import './modules/admin_module/add_valid_company'
+import './modules/admin_module/add_new_location'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
