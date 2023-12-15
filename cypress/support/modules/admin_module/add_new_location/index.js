@@ -1,19 +1,17 @@
 Cypress.Commands.add('login', () => {
 
-    // Given I am on the login page of the HR Management System
+    
     cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
 
-    // When the HR administrator selects the option to add general information for the company
+    
 })
 
 Cypress.Commands.add('viewSystemUsersPage.selectOptionAdminModule', () => {
-cy.get(':nth-child(1) > .oxd-main-menu-item').click()
+    cy.get(':nth-child(1) > .oxd-main-menu-item').click()
 })
 
 Cypress.Commands.add('viewSystemUsersPage.selectOptionLocalization', () => {
-
-// When the HR administrator selects the option Organization
-cy.get('.oxd-topbar-body-nav > ul > :nth-child(3)').click()
+    cy.get('.oxd-topbar-body-nav > ul > :nth-child(3)').click()
 })
 
 Cypress.Commands.add('viewLocationsPage.selectOptionLocation', () => {
@@ -47,5 +45,24 @@ Cypress.Commands.add('viewLocationsPage.validDetailsLocationCreationForm', () =>
     cy.get('.oxd-toast').should('be.visible')
     
 
+})
+
+Cypress.Commands.add('view_locations_page.mandatory_fields_error_message', () => {
+
+    // Name Mandatory
+    cy.get('.oxd-button--secondary').click().should('be.visible')
+
+    // Country Mandatory
+    cy.get(':nth-child(1) > .oxd-grid-2 > .oxd-grid-item > .oxd-input-group > .oxd-text').should('be.visible')
+    
+    
+})
+
+Cypress.Commands.add('view_locations_page.click_add_button', () => {
+    
+    // Add Button
+    cy.get(':nth-child(4) > .oxd-input-group > .oxd-text').should('be.visible')
+
+    
 })
 
