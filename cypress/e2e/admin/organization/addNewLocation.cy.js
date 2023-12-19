@@ -7,7 +7,7 @@ describe('Add Location in HRM System', () => {
         cy['loginPage.fillFormAndSubmit']()
     })
   
-      it('Sucessfully Add Location in HRM System', () => {
+      it.only('Sucessfully Add Location in HRM System', () => {
         
         // When the HR administrator selects the option Admin Module
         cy['viewSystemUsersPage.selectOptionAdminModule']()
@@ -28,7 +28,7 @@ describe('Add Location in HRM System', () => {
 
       // This test case verifies the system's behavior when attempting to 
       // add a location with invalid or incomplete data.
-      it.only('Adding a Location with Invalid Data', () => {
+      it('Adding a Location with Invalid Data', () => {
         
         // When the HR administrator selects the option Admin Module
         cy['viewSystemUsersPage.selectOptionAdminModule']()
